@@ -1,0 +1,6 @@
+/* responsive for w-full by 1040px */
+@media screen and (max-width:1040px) {
+   .logo{
+      width: 100%;
+   }
+}

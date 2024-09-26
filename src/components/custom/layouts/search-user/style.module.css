@@ -1,0 +1,31 @@
+.search-form{
+   border-radius: 4px;
+   background: #F5F5F5
+}
+.search-form::after{
+   content: "\ed95";
+   font-family: Icomoon;
+   position: absolute;
+   top: 6px;
+   right: 10px;
+   font-size: 18px;
+}
+
+.search-user{
+   border: none;
+   outline: none;
+   color: #4a4747;
+   font-size: 16px;
+   width: 90%;
+   background: none;
+}
+/* for responsive size by 500px */
+@media screen and (max-width:500px) {
+   .search-form{
+      width: 20%;
+      transition: width 0.2s ease;
+   }
+   .search-form:hover{
+      width: 100%;
+   }
+}

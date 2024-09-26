@@ -1,0 +1,148 @@
+/* import own css */
+@import url(reset.css);
+
+/* import tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom menu's active class's styles */
+.active{
+   border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* container styles */
+.container{
+   width: 80%;
+   margin: 2rem auto;
+}
+/* responsive for 1440px all pages container is 90% */
+@media screen and (max-width:1440px) {
+   .container{
+      width: 90%;
+   }
+}
+
+/* menu shouldn't seem desktop in bar */
+.bar-menu ~.menu{
+   display: none;
+}
+
+/* custom checkbox styles */
+.custom-checkbox {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 34px;
+   height: 34px;
+   background: #fff;
+   border-radius: 120px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* likes and eyes custom checkbox's same styles */
+.custom-checkbox.likes::before,
+.custom-checkbox.eyes::before {
+   font-family: Icomoon;
+   font-size: 19px;
+   color: #000;
+   font-weight: 700;
+}
+
+/* only likes styles */
+.custom-checkbox.likes::before {
+   content: "\ed75";
+}
+
+/* only eyes styles */
+.custom-checkbox.eyes::before {
+   content: "\e906";
+}
+
+/* when checked about likes styles */
+.custom-checkbox.likes:checked::before {
+   content: "\ed77";
+}
+
+/* when checked about eyes styles */
+.custom-checkbox.eyes:checked::before {
+   content: "\ed73";
+}
+
+/* constant styles */
+.constant {
+   position: relative;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   gap: 16px;
+   font-size: 17px;
+   font-weight: 600;
+   color: #DB4444;
+}
+
+/* wall of constant styles */
+.constant::before {
+   content: '';
+   width: 20px;
+   height: 40px;
+   border-radius: 6px;
+   background: #DB4444;
+}
+
+/* if users want constant is right then */
+.constant.right {
+   flex-direction: row-reverse;
+}
+
+/* constant title styles */
+.constant-title {
+   color: #000;
+   font-size: 27px;
+   font-weight: 600;
+   line-height: 48px;
+   letter-spacing: 1.44px;
+}
+/* if users want title is right then */
+.constant-title.right{
+   text-align: right;
+}
+/* if users want title is center then */
+.constant-title.center{
+   text-align: center;
+}
+/* custom menu's and bar-menu's and end-menu's and foot__bar's responsive for 1040px */
+@media screen and (max-width:1040px) {
+   .menu,
+   .end-menu{
+      display: none;
+   }
+   .bar-menu:checked ~ .menu{
+      display: flex;
+      position: fixed;
+      width: 100%;
+      background: white;
+      inset: 0;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 10;
+   }
+   .foot__bar > .end-menu{
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: #c2c2c2;
+      padding: 8px;
+      justify-content: space-around;
+   }
+
+   /* for responsive w-full */
+   .bar-full{
+      width: 100%;
+   }
+}

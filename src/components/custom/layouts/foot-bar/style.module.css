@@ -1,0 +1,9 @@
+.foot-bar{
+   display: none;
+}
+/* for responsive foot-bar by 1040px */
+@media screen and (max-width:1040px) {
+   .foot-bar{
+      display: block;
+   }
+}

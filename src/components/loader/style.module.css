@@ -1,0 +1,26 @@
+.loader{
+   width: 60%;
+   margin: 25rem auto;
+}
+.loader::after{
+   content: '';
+   display: block;
+   width: 60%;
+   height: 40px;
+   border-radius: 8px;
+   background: #DB4444;
+   animation-name: loading;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+   from{
+      transform: translateX(-30%);
+   }
+   to{
+      transform: translateX(100%);
+   }
+}
