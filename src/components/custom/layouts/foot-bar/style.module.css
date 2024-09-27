@@ -2,7 +2,7 @@
    display: none;
 }
 /* for responsive foot-bar by 1040px */
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1279px) {
    .foot-bar{
       display: block;
    }

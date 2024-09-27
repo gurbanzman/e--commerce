@@ -1,21 +1,26 @@
-import { BreadCrumb } from 'primereact/breadcrumb';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const BreadCrumbs = () => {
    const location = useLocation();
-   const pathSegments = location.pathname.split("/").filter(Boolean);
-   console.log(pathSegments);
    
+   let currentLink = '';
 
-   const items = [
-      { label: 'Home', url: '/' },
-      ...pathSegments.map((segment, index) => {
-         const url = `/${pathSegments.slice(0, index + 1).join("/")}`;
-         return { label: segment.charAt(0).toUpperCase() + segment.slice(1), url };
-      })
-   ];
-  
-   const home = { icon: 'pi pi-home', url: '/' };
-   return <BreadCrumb model={items} home={home} />
+   const crumbs = location.pathname.split("/").filter(crumb => crumb !== '').map(crumb => {
+      currentLink =+ `/${crumb}`
+      return (
+         <div key={crumb} className='crumb'>
+            <Link to={currentLink}>{crumb}</Link>
+         </div>
+      )
+   })
+   
+   
+   return (
+      <ul>
+         <li>
+            {crumbs}
+         </li>
+      </ul>
+   )
 };
 
 export default BreadCrumbs;

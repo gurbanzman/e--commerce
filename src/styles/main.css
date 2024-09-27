@@ -113,8 +113,8 @@
 .constant-title.center{
    text-align: center;
 }
-/* custom menu's and bar-menu's and end-menu's and foot__bar's responsive for 1040px */
-@media screen and (max-width:1040px) {
+/* custom menu's and bar-menu's and end-menu's and foot__bar's responsive for 1279px */
+@media screen and (max-width:1279px) {
    .menu,
    .end-menu{
       display: none;

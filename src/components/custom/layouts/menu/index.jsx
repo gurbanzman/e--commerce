@@ -5,10 +5,10 @@ const Menu = () => {
    return (
       <ul className={`menu flex items-center gap-8 ${styles[`responsive-menu`]} w-full`}>
          <li>
-            <NavLink className={`text-black text-base block p-2`}>Home</NavLink>
+            <NavLink to={`/`} className={`text-black text-base block p-2`}>Home</NavLink>
          </li>
          <li>
-            <NavLink className={`text-black text-base block p-2`}>Contact</NavLink>
+            <NavLink to={`/contact`} className={`text-black text-base block p-2`}>Contact</NavLink>
          </li>
          <li>
             <NavLink className={`text-black text-base block p-2`}>About</NavLink>

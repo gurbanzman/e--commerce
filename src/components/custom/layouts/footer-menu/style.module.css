@@ -1,0 +1,11 @@
+/* responsive for 1040px  */
+@media screen and (max-width:1040px) {
+   .responsive-footer-menu{
+      flex-direction: column;
+      row-gap: 60px;
+      align-items: center;
+   }
+   .responsive-footer-list{
+      text-align: center;
+   }
+}

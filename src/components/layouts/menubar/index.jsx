@@ -5,6 +5,7 @@ import EndMenu from "../../custom/layouts/end-menu";
 import styles from "./style.module.css";
 import Bar from "../../custom/layouts/bar";
 import FootBar from "../../custom/layouts/foot-bar";
+import BreadCrumbs from "../../custom/layouts/breadcrumb";
 
 const MenuBar = () => {
   return (
@@ -19,6 +20,7 @@ const MenuBar = () => {
         <Bar />
         <FootBar />
       </section>
+      <BreadCrumbs />
     </nav>
   );
 };
