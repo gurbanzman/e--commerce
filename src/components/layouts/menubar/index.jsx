@@ -1,11 +1,6 @@
 import Logo from "../../custom/ui/logo";
-import Menu from "../../custom/layouts/menu";
-import SearchUser from "../../custom/layouts/search-user";
-import EndMenu from "../../custom/layouts/end-menu";
 import styles from "./style.module.css";
-import Bar from "../../custom/layouts/bar";
-import FootBar from "../../custom/layouts/foot-bar";
-import BreadCrumbs from "../../custom/layouts/breadcrumb";
+import {Bar, BreadCrumbs, EndMenu, FootBar, Menu, SearchUser} from "../../custom/layouts/index";
 
 const MenuBar = () => {
   return (

@@ -1,5 +1,4 @@
-import FooterMenu from "../../custom/layouts/footer-menu";
-import Security from "../../custom/layouts/security";
+import {FooterMenu, Security} from "../../custom/layouts/index";
 
 const Footer = () => {
   return (

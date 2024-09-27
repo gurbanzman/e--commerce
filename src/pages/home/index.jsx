@@ -1,12 +1,12 @@
-import Footer from "../../components/layouts/footer";
-import MenuBar from "../../components/layouts/menubar";
+import ConstantPage from "../../components/constant";
+import { BreadCrumbs } from "../../components/custom/layouts";
+
 
 const Home = () => {
   return (
-    <>
-      <MenuBar />
-      <Footer />
-    </>
+    <ConstantPage title={<BreadCrumbs />}>
+      
+    </ConstantPage>
   );
 };
 
