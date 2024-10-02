@@ -1,0 +1,30 @@
+.category-head{
+   border-radius: 4px;
+   background: #F5F5F5;
+}
+.logo{
+   width: 50%;
+   margin: auto;
+}
+.new,
+.percent{
+   color: #fafafa;
+   font-size: 15px;
+}
+.percent{
+   background: #DB4444;
+}
+.new{
+   background: #0F6;
+}
+.price{
+   color: #DB4444;
+}
+.price-later{
+   text-decoration: line-through;
+   color: #000;
+   opacity: 0.5;
+}
+.none{
+   display: none;
+}

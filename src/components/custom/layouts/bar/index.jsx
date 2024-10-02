@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 const Bar = () => {
    return (
       <div className="ml-3">
-         <CustomCheckbox name={`${styles[`bar`]} bar-menu`}/>
+         <CustomCheckbox className={`${styles[`bar`]} bar-menu`}/>
          <Menu />
       </div>
    )

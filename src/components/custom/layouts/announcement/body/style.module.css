@@ -1,0 +1,45 @@
+.logo{
+   width: 40px;
+   height: 50px;
+}
+.half{
+   width: 50%;
+}
+.link{
+   padding-bottom: 7px;
+   border-bottom: 1px solid #fafafa;
+   display: inline-block;
+   position: relative;
+}
+.link::after{
+   content: '\ed79';
+   font-family: Icomoon;
+   position: absolute;
+   right: -25px;
+   font-size: 20px;
+}
+.primary-link{
+   padding: 16px 48px;
+   border-radius: 4px;
+   background: #0F6;
+   color: #fafafa;
+}
+.category-title{
+   color: #0F6;
+}
+.logo-none{
+   display: none;
+}
+.describe{
+   font-size: 1rem;
+   color: #fafafa;
+}
+.title{
+   font-size: 24px;
+   color: #fafafa;
+}
+.text-section{
+   position: absolute;
+   bottom: 5%;
+   left: 4%;
+}

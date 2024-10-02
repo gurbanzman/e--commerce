@@ -15,7 +15,6 @@ const MenuBar = () => {
         <Bar />
         <FootBar />
       </section>
-      <BreadCrumbs />
     </nav>
   );
 };

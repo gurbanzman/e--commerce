@@ -44,11 +44,13 @@
 
 /* likes and eyes custom checkbox's same styles */
 .custom-checkbox.likes::before,
-.custom-checkbox.eyes::before {
+.custom-checkbox.eyes::before,
+.custom-checkbox.bin::before {
    font-family: Icomoon;
    font-size: 19px;
    color: #000;
    font-weight: 700;
+   display: block;
 }
 
 /* only likes styles */
@@ -60,10 +62,14 @@
 .custom-checkbox.eyes::before {
    content: "\e906";
 }
+/* only bin styles */
+.custom-checkbox.bin::before {
+   content: "\f014";
+}
 
 /* when checked about likes styles */
 .custom-checkbox.likes:checked::before {
-   content: "\ed77";
+   content: "\f004";
 }
 
 /* when checked about eyes styles */
@@ -87,7 +93,9 @@
 .constant::before {
    content: '';
    width: 20px;
-   height: 40px;
+   display: block;
+   padding: 26px 12px;
+   /* height: 40px; */
    border-radius: 6px;
    background: #DB4444;
 }
@@ -112,6 +120,10 @@
 /* if users want title is center then */
 .constant-title.center{
    text-align: center;
+}
+/* custom margin: margin 10% */
+.mt-10{
+   margin-top: 10%;
 }
 /* custom menu's and bar-menu's and end-menu's and foot__bar's responsive for 1279px */
 @media screen and (max-width:1279px) {
