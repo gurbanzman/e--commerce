@@ -1,8 +1,14 @@
 .view-btn-link{
+   display: block;
+}
+.same-btn{
    padding: 16px 48px;
    border-radius: 4px;
    background: #DB4444;
    color: #fafafa;
    font-size: 17px;
-   display: block;
+}
+.btn{
+   color: #000;
+   font-size: 17px;
 }

@@ -15,7 +15,9 @@ import Constant from "../../components/custom/ui/constant";
 import Title from "../../components/custom/ui/title";
 import ViewAllDatasByButtonLink from "../../components/custom/ui/button/link/view";
 import Collection from "../../components/custom/layouts/announcement/collection";
-import CustomCheckbox from "../../components/custom/ui/checkbox";
+import FooterFeauturesCarts from "../../components/custom/layouts/cart/features/footer";
+import TextInput from "../../components/custom/ui/text-input";
+import UserEditForm from "../../components/custom/layouts/user/edit/form";
 
 const Home = () => {
   const handleClickNextSlideBtn = useCallback((ref) => {
@@ -92,9 +94,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="bg-black">
-          
+      <section className="mt-10">
+        <div className="container">
+          <div className="container">
+            <FooterFeauturesCarts />
+          </div>
+        </div>
+      </section>
+      <section className="mt-10">
+        <div className="container">
+          <UserEditForm />
         </div>
       </section>
     </ConstantPage>
