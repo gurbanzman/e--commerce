@@ -125,6 +125,10 @@
 .mt-10{
    margin-top: 10%;
 }
+/* custom margin: margin 7% */
+.mt-7{
+   margin-top: 7%;
+}
 /* custom menu's and bar-menu's and end-menu's and foot__bar's responsive for 1279px */
 @media screen and (max-width:1279px) {
    .menu,

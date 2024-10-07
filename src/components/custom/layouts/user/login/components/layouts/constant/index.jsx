@@ -1,5 +1,6 @@
-import Title from "../../../../../ui/title";
-import image from "../../../../../../../assets/lgin-image.png";
+
+import image from "../../../../../../../../assets/lgin-image.png";
+import Title from "../../../../../../ui/title";
 import styles from "./style.module.css";
 
 const ConstantLoginWebPage = ({ title, desc, children, sectionClass }) => {
