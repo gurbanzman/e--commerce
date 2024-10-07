@@ -16,8 +16,8 @@ import Title from "../../components/custom/ui/title";
 import ViewAllDatasByButtonLink from "../../components/custom/ui/button/link/view";
 import Collection from "../../components/custom/layouts/announcement/collection";
 import FooterFeauturesCarts from "../../components/custom/layouts/cart/features/footer";
-import TextInput from "../../components/custom/ui/text-input";
 import UserEditForm from "../../components/custom/layouts/user/edit/form";
+import UserSign from "../../components/custom/layouts/user/login";
 
 const Home = () => {
   const handleClickNextSlideBtn = useCallback((ref) => {
@@ -106,6 +106,7 @@ const Home = () => {
           <UserEditForm />
         </div>
       </section>
+      <UserSign />
     </ConstantPage>
   );
 };

@@ -10,9 +10,9 @@ const ViewAllDatasByButtonLink = React.memo(({url,title}) => {
    );
 });
 
-export const Btn = React.memo(({type,handleClick,title,className}) => {
+export const Btn = React.memo(({type,handleClick,title,className,customClass}) => {
    return (
-      <button type={type} className={`${styles[`${className}`]}`} onClick={handleClick}>{title}</button>
+      <button type={type} className={`${styles[`${className}`]} ${customClass}`} onClick={handleClick}>{title}</button>
    );
 });
 

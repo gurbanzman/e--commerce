@@ -1,0 +1,8 @@
+.login-input{
+   outline: none;
+   display: block;
+   width: 100%;
+   padding: 8px 2px;
+   font-size: 17px;
+   border-bottom: 2px solid #c2c2c2;
+}
